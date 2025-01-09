@@ -63,7 +63,7 @@ dependency "network" {
 
   mock_outputs = {
     vpc_id          = "temp-id"
-    private_subnets = ["temp"]
-    intra_subnets   = ["temp"]
+    private_subnets =["temp"]
+    intra_subnets   =       ["temp"]
   }
 }

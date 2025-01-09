@@ -28,7 +28,7 @@ jobs:
           role-to-assume: ${{secrets.ASSUME_ROLE}}
           role-session-name: aws-github-session
 
-      - name: Plan
+      - name: Apply
         uses: gruntwork-io/terragrunt-action@v2
         with:
           tofu_version: ${{ env.tofu_version }}
