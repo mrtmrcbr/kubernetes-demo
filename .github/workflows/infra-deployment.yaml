@@ -3,9 +3,7 @@ run-name: Kubernetes Demo Infra Deployment Pipeline
 on:
   push:
     branches:
-      - 'master'
-    paths:
-      - 'aws-infra'
+      - master
 
 permissions:
       id-token: write
