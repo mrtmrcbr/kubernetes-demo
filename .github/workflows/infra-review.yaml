@@ -49,4 +49,4 @@ jobs:
           tofu_version: ${{ env.tofu_version }}
           tg_version: ${{ env.tg_version }}
           tg_dir: ${{ env.working_dir }}
-          tg_command: '--terragrunt-iam-role ${{secrets.ASSUME_ROLE}} plan'
+          tg_command: 'plan'
