@@ -46,7 +46,7 @@ jobs:
       - name: Plan
         uses: gruntwork-io/terragrunt-action@v2
         with:
-          tofu_version: ${{ env.tofu_version }}
+          tf_version: ${{ env.tf_version }}
           tg_version: ${{ env.tg_version }}
           tg_dir: ${{ env.working_dir }}
           tg_command: 'plan'
