@@ -21,6 +21,13 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@main
 
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: eu-central-1
+          role-to-assume: ${{secrets.ASSUME_ROLE}}
+          role-session-name: aws-github-session
+
       - name: Plan
         uses: gruntwork-io/terragrunt-action@v2
         with:
