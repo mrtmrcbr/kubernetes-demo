@@ -10,7 +10,7 @@ permissions:
       contents: read
 
 env:
-  tofu_version: '1.8.1'
+  tf_version: '1.10.4'
   tg_version: '0.67.0'
   working_dir: 'aws-infra'
 
