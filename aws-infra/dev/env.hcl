@@ -1,4 +1,4 @@
 locals {
-  project_name = "myapp"
+  project_name = "myapp-DEV"
   env          = "DEV"
 }
